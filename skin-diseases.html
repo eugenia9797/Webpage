@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皮膚疾病 - E.sheen 皮膚專科醫師</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- 思源柔黑體 (jf open 粧黑) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jf-openhuninn-2.0@1.0.0/webfont/jf-openhuninn-2.0.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'jf-openhuninn-2.0', 'Noto Sans TC', sans-serif;
+        }
+
+        .section-title,
+        .section-subtitle,
+        .article-title,
+        .article-excerpt,
+        .article-tag,
+        .read-more {
+            font-family: 'jf-openhuninn-2.0', 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Component Placeholder -->
+    <div id="header-component"></div>
+
+    <!-- Main Content: Skin Diseases Listing -->
+    <main id="content" class="page-container fade-in">
+        <section class="section-header">
+            <h2 class="section-title">常見皮膚疾病</h2>
+            <p class="section-subtitle">專業醫師觀點，守護您的肌膚健康</p>
+        </section>
+
+        <!-- Article Grid -->
+        <div class="article-grid">
+            <!-- Article Card: Hair Loss -->
+            <article class="article-card">
+                <div class="article-thumb">
+                    <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?q=80&w=1000&auto=format&fit=crop"
+                        alt="乳癌掉髮治療">
+                    <div class="article-tag">掉髮 | 乳癌</div>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">乳癌接受賀爾蒙治療掉髮怎麼辦？</h3>
+                    <p class="article-excerpt">許多乳癌患者在接受賀爾蒙治療後會面臨落髮問題，這常被忽視卻深具心理壓力。本文探討其成因並提供專業建議...</p>
+                    <a href="article-hormone-hair-loss.html" class="read-more">閱讀更多 <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Component Placeholder -->
+    <div id="footer-component"></div>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script>
+        // Auto-scroll to content on page load
+        window.addEventListener('load', function () {
+            const content = document.getElementById('content');
+            if (content) {
+                setTimeout(function () {
+                    content.scrollIntoView({ behavior: 'smooth' });
+                }, 200);
+            }
+        });
+    </script>
+</body>
+
+</html>

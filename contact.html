@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermatologist - Contact</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Component Placeholder -->
+    <div id="header-component"></div>
+
+    <!-- Contact Content -->
+    <main class="contact-container fade-in">
+        <h1 class="sans"
+            style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--text-primary); text-align: center;">聯絡我</h1>
+
+        <form action="mailto:esheen.dermatologist@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name" class="form-label">姓名</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label">留言</label>
+                <textarea id="message" name="message" class="form-textarea" required></textarea>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer Component Placeholder -->
+    <div id="footer-component"></div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>
