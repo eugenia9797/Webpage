@@ -653,10 +653,10 @@ img {
 
 /* Center: Info */
 .footer-center {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -686,16 +686,25 @@ img {
 /* Right: Sitemap */
 .footer-right {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right h4 {
+  font-family: 'jf-openhuninn-2.0', 'Noto Sans TC', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
 }
 
 .footer-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.8rem;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 .footer-links li a {
