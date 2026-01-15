@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫學美容 - E.sheen 皮膚專科醫師</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- 思源柔黑體 (jf open 粧黑) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jf-openhuninn-2.0@1.0.0/webfont/jf-openhuninn-2.0.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'jf-openhuninn-2.0', 'Noto Sans TC', sans-serif;
+        }
+
+        .section-title,
+        .section-subtitle,
+        .article-title,
+        .article-excerpt,
+        .article-tag,
+        .read-more {
+            font-family: 'jf-openhuninn-2.0', 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Component Placeholder -->
+    <div id="header-component"></div>
+
+    <!-- Main Content: Aesthetics Listing -->
+    <main id="content" class="page-container fade-in">
+        <section class="section-header">
+            <h2 class="section-title">醫學美容</h2>
+            <p class="section-subtitle">細緻呵護，重拾自信光采</p>
+        </section>
+
+        <!-- Article Grid -->
+        <div class="article-grid">
+            <!-- Article Card: Intimate Care -->
+            <article class="article-card">
+                <div class="article-thumb">
+                    <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="私密處保養">
+                    <div class="article-tag">私密處保養 | 美容</div>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">女人最柔軟的秘密 —— 私密處保養新觀點</h3>
+                    <p class="article-excerpt">「真正的自信，從細節開始。」有「女人的第二張臉」稱號的私密處，相比於身體其他肌膚來得更薄、更敏感...</p>
+                    <a href="article-intimate-care.html" class="read-more">閱讀更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Component Placeholder -->
+    <div id="footer-component"></div>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script>
+        // Auto-scroll to content on page load
+        window.addEventListener('load', function () {
+            const content = document.getElementById('content');
+            if (content) {
+                setTimeout(function () {
+                    content.scrollIntoView({ behavior: 'smooth' });
+                }, 200);
+            }
+        });
+    </script>
+</body>
+
+</html>
