@@ -641,9 +641,9 @@ img {
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 14rem;
 }
 
 /* Left: Logo */
@@ -738,8 +738,11 @@ img {
   }
 
   .footer-links {
-    justify-content: center;
     gap: 1rem;
+  }
+
+  .footer-container {
+    gap: 3rem;
   }
 }
 
